@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+  <!-- Lewa kolumna -->
+  <div style="flex: 0 0 200px; text-align: left; color: #555;">
+    <!-- Zdjęcie w kształcie koła -->
+    <!-- Data i czas czytania -->
+    <h2 style="font-style: italic;">{{ data.date | date_to_string }}</h2>
+    <p style="color: grey; font-weight: bold;">Estimated reading time: {{ page.content | reading_time }} minutes</p>
+      <img src="/images/autor.jpg" alt="Author's photo" style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid #000000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1rem; text-align: center;" >
+  </div>
+
+  <!-- Główna treść -->
+  <div style="flex: 1; margin-left: 20px;">
+    <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #333;">{{ data.title }}</h1>
+    <div style="line-height: 1.8; font-size: 1.1rem; color: #444;">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<!-- Autor -->
+<div style="margin-top: 2rem; text-align: center; border-top: 2px solid red; padding-top: 1rem;">
+  <h3 style="color: #000000; font-weight: 600;">{{ data.author }}</h3>
+</div>
