@@ -1,0 +1,15 @@
+---
+layout: page
+title: Posts
+---
+<div class="bg-gradient-to-b from-white to-gray-300 min-h-[87vh] flex flex-col justify-center text-center ">
+  <div class="relative isolate px-6 lg:px-8 ">
+<ul>
+  <% collections.posts.resources.each do |post| %>
+    <li>
+      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+    </li>
+<hr class="border-t-2 border-dashed border-gray-500 my-6 ">  <% end %>
+</ul>
+</div>
+</div>

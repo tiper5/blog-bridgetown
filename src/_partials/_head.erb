@@ -1,0 +1,16 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+  <% if page.data.title && page.data.title != "Index" %>
+    <%= "#{page.data.title} | #{site.metadata.title}" %>
+  <% else %>
+    <%= "#{site.metadata.title}: #{site.metadata.tagline}" %>
+  <% end %>
+</title>
+
+<meta name="description" content="<%= site.metadata.description %>" />
+
+<link rel="stylesheet" href="<%= asset_path 'css' %>" />
+<script src="<%= asset_path 'js' %>" defer></script>
+<%= live_reload_dev_js %>

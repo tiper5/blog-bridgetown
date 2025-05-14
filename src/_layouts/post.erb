@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="bg-gradient-to-b from-white to-gray-300 min-h-screen flex flex-col">
+
+  <header class="bg-gray-800 text-gray-100">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="<%= relative_url('/') %>" class="text-xl font-semibold text-gray-100">Home</a>
+        <a href="<%= relative_url('/about') %>" class="text-xl font-semibold text-gray-100">About</a>
+        <a href="<%= relative_url('/posts') %>" class="text-xl font-semibold text-gray-100">Posts</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container (Matching Background & Margin from Top) -->
+<div class="mx-auto max-w-4xl p-6 shadow-lg rounded-lg bg-gradient-to-b from-white to-gray-300 mt-16 mb-16">
+  <div class="relative">
+    <!-- Date and Image floated left -->
+    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col items-start">
+      <h2 class="italic text-lg text-gray-700 mb-2"><%= data.date.strftime("%B %-d, %Y") %></h2>
+      <img src="/images/autor.jpg" alt="Author's photo"
+           class="w-36 h-36 rounded-full border-4 border-black shadow-lg">
+    </div>
+
+    <!-- Page Content -->
+    <div class="ml-48">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4"><%= data.title %></h1>
+      <div class="leading-loose text-lg text-gray-700 prose xl:prose-xl">
+        <%= content %>
+      </div>
+      
+    </div>
+    <!-- Author Section -->
+  <div class="mt-8 text-center border-t-2 border-gray-800 pt-4">
+    <h3 class="text-black font-semibold text-lg"><%= data.author %></h3>
+  </div>
+  </div>
+</div>
+  
+
+</div>
