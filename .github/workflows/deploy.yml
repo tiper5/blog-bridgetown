@@ -27,6 +27,9 @@ jobs:
           gem install bundler
           bundle install
 
+      - name: Install JavaScript dependencies
+        run: yarn install
+
       - name: Build the site
         run: bundle exec bridgetown deploy
 
