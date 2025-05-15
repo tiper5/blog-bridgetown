@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Day 3: The NEB reaserch challenge | Your awesome title
+</title>
+
+<meta name="description" content="Blog about our progress in work." />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.RAIL4DGV.css" />
+<script src="/_bridgetown/static/index.D6YUFUTM.js" defer></script>
+<script type="module">let lastmod = 0
+function startReloadConnection() {
+  const evtSource = new EventSource("/_bridgetown/live_reload")
+  evtSource.onmessage = event => {
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  }
+  evtSource.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+  evtSource.onerror = event => {
+    if (evtSource.readyState === 2) {
+      // reconnect with new object
+      evtSource.close()
+      console.warn("Live reload: attempting to reconnect in 3 seconds...")
+
+      setTimeout(() => startReloadConnection(), 3000)
+    }
+  }
+}
+setTimeout(() => {
+  startReloadConnection()
+}, 500)
+</script>
+
+  </head>
+  <body class="post ">
+    
+
+    <main>
+      <div class="bg-gradient-to-b from-white to-gray-300 min-h-screen flex flex-col">
+
+  <header class="bg-gray-800 text-gray-100">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/" class="text-xl font-semibold text-gray-100">Home</a>
+        <a href="/about" class="text-xl font-semibold text-gray-100">About</a>
+        <a href="/posts" class="text-xl font-semibold text-gray-100">Posts</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container (Matching Background & Margin from Top) -->
+<div class="mx-auto max-w-4xl p-6 shadow-lg rounded-lg bg-gradient-to-b from-white to-gray-300 mt-16 mb-16">
+  <div class="relative">
+    <!-- Date and Image floated left -->
+    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col items-start">
+      <h2 class="italic text-lg text-gray-700 mb-2">May 8, 2025</h2>
+      <img src="/images/autor.jpg" alt="Author's photo"
+           class="w-36 h-36 rounded-full border-4 border-black shadow-lg">
+    </div>
+
+    <!-- Page Content -->
+    <div class="ml-48">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Day 3: The NEB reaserch challenge</h1>
+      <div class="leading-loose text-lg text-gray-700 prose xl:prose-xl">
+        <p>Today we read about New European Bauhaus project to understand what it is about. We created document about our opinion on this project and we published it on basecamp site. Maybe later in our work we will use this document to create a website about New European Bauhas project.</p>
+
+      </div>
+      
+    </div>
+    <!-- Author Section -->
+  <div class="mt-8 text-center border-t-2 border-gray-800 pt-4">
+    <h3 class="text-black font-semibold text-lg">Created by Tomasz</h3>
+  </div>
+  </div>
+</div>
+  
+
+</div>
+    </main>
+
+    <footer class="bg-gray-800 p-3.5 text-gray-100 flex justify-center w-full mt-auto text-xl " >
+  Contact me at&nbsp<a href="mailto:kotron824@gmail.com">kotron824@gmail.com</a>
+</footer>
+
+  </body>
+</html>
