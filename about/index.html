@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    About | Your awesome title
+</title>
+
+<meta name="description" content="Blog about our progress in work." />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.RAIL4DGV.css" />
+<script src="/_bridgetown/static/index.D6YUFUTM.js" defer></script>
+<script type="module">let lastmod = 0
+function startReloadConnection() {
+  const evtSource = new EventSource("/_bridgetown/live_reload")
+  evtSource.onmessage = event => {
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  }
+  evtSource.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+  evtSource.onerror = event => {
+    if (evtSource.readyState === 2) {
+      // reconnect with new object
+      evtSource.close()
+      console.warn("Live reload: attempting to reconnect in 3 seconds...")
+
+      setTimeout(() => startReloadConnection(), 3000)
+    }
+  }
+}
+setTimeout(() => {
+  startReloadConnection()
+}, 500)
+</script>
+
+  </head>
+  <body class="page ">
+    
+
+    <main>
+      <header class="bg-gray-800 text-gray-100">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+        <img class="h-14 w-a" src="images/logo.png" alt="">
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="/" class="text-xl font-semibold text-gray-100">Home</a>
+      <a href="/about" class="text-xl font-semibold text-gray-100">About</a>
+      <a href="/posts" class="text-xl font-semibold text-gray-100">Posts</a>
+    </div>
+  </nav>
+</header>
+<div class="bg-gradient-to-b from-white to-gray-300 min-h-[87vh] flex flex-col items-center justify-center">
+  <div class="relative isolate px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 prose xl:prose-xl">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Work with Me</h2>
+        <p class="mt-8 text-lg font-medium text-gray-700 sm:text-xl/8">
+          🚀 Welcome! This page is all about my internship experience, the lessons I've learned, and the challenges I've overcome.
+          As I navigate my professional journey, I focus on gaining hands-on experience, problem-solving, and building meaningful connections in my field.
+          If you're interested in joining an internship, exploring career opportunities, or learning more about my journey, you've come to the right place!
+        </p>
+      </div>
+
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">My values <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">Meet my mentors <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-700">Projects completed</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-gray-900">0</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-700">Colleagues I’ve collaborated with</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-gray-900">1</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-700">Learning hours per week</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-gray-900">30</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-700">Career opportunities explored</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-gray-900">Unlimited</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    </main>
+
+    <footer class="bg-gray-800 p-3.5 text-gray-100 flex justify-center w-full mt-auto text-xl " >
+  Contact me at&nbsp<a href="mailto:kotron824@gmail.com">kotron824@gmail.com</a>
+</footer>
+
+  </body>
+</html>
