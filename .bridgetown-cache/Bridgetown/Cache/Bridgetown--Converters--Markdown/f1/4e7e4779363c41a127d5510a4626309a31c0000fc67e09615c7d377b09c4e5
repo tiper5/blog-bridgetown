@@ -1,0 +1,3 @@
+I"R<p>Today we changed our templating enginge to ERB. I had to change all .liquid files and main .md files to .erb and change the code in this files to working .erb code. I created _partials folder with _footer.erb, _head.erb, _navbar.erb and wrote working code.
+The biggest problem was creating partials, everything else went smoothly.</p>
+:ET
