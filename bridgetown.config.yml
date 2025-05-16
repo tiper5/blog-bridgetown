@@ -17,7 +17,9 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://tiper5.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+
+base_path: "/blog-bridgetown"
 
 permalink: pretty
 template_engine: liquid
