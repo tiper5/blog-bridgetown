@@ -21,6 +21,10 @@ url: "https://tiper5.github.io" # the base hostname & protocol for your site, e.
 
 base_path: "/blog-bridgetown"
 
+frontend_build:
+  skip_manifest: true
+
+
 permalink: pretty
 template_engine: liquid
 
