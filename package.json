@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "esbuild": "node esbuild.config.js --minify",
-    "esbuild-dev": "node esbuild.config.js --watch"
+    "esbuild-dev": "node esbuild.config.js --watch",
+    "build": "bridgetown frontend:build"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",

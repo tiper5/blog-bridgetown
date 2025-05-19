@@ -41,3 +41,9 @@ jobs:
         with:
           branch: gh-pages
           folder: output
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Build frontend (Tailwind)
+        run: npm run build
