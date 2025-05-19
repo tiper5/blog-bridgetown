@@ -22,16 +22,16 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Install dependencies
+      - name: Install Ruby dependencies
         run: |
           gem install bundler
           bundle install
 
-      - name: Install JavaScript dependencies
-        run: yarn install
+      - name: Install Node dependencies
+        run: npm install
 
       - name: Build frontend assets
-        run: yarn esbuild
+        run: npm run build
 
       - name: Build the site
         run: bundle exec bridgetown build
@@ -41,9 +41,3 @@ jobs:
         with:
           branch: gh-pages
           folder: output
-
-      - name: Install Node dependencies
-        run: npm install
-
-      - name: Build frontend (Tailwind)
-        run: npm run build
