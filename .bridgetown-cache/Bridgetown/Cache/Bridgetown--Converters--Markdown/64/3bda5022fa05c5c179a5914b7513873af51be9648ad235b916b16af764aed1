@@ -1,8 +1,0 @@
-I"�<p>Today we started working with the <code class="highlighter-rouge">Bridgetown</code> environment. Since we are just beginning our journey with Bridgetown during our internship, we first had to set up the right environment to start learning and working with this tool. We installed the following applications: <code class="highlighter-rouge">Ruby</code>, <code class="highlighter-rouge">Node.js</code>, <code class="highlighter-rouge">Yarn</code>, <code class="highlighter-rouge">Git</code>, <code class="highlighter-rouge">Bridgetown CLI</code>, and <code class="highlighter-rouge">Visual Studio Code</code>.</p>
-
-<p>Because Bridgetown only works on <code class="highlighter-rouge">Linux</code> and <code class="highlighter-rouge">macOS</code>, and we are using <code class="highlighter-rouge">Windows</code>, we had to install <code class="highlighter-rouge">Ubuntu on Windows (WSL – Windows Subsystem for Linux)</code>. This was our first challenge – but we managed to overcome it quickly.</p>
-
-<p>During the installation process, we encountered a few more issues – some applications didn’t work correctly at first. We had to deepen our knowledge and search for solutions in the documentation and online forums. In the end, we were able to configure everything properly.</p>
-
-<p>Despite the difficulties, we’re happy that we got to learn something completely new and solve real technical problems. It was a valuable lesson that will definitely benefit us in the future.</p>
-:ET
