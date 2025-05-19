@@ -3,6 +3,8 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
     <link rel="stylesheet" href="<%= relative_url '/output.css' %>">
+    <%= stylesheet_tag "output" %>   <!-- output.css -->
+    <%= javascript_tag "app" %>      <!-- app.js -->
 
 
 
