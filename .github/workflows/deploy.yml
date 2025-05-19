@@ -30,14 +30,14 @@ jobs:
       - name: Install Node dependencies
         run: npm install
 
-      - name: Build frontend assets
+      - name: Build frontend assets (Tailwind, esbuild)
         run: npm run build
 
-      - name: Build the site
+      - name: Build the site (Bridgetown)
         run: bundle exec bridgetown build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: output
+          branch: gh-pages        # <- to jest branch docelowy dla GitHub Pages
+          folder: output          # <- Bridgetown build output folder
